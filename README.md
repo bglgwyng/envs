@@ -3,5 +3,5 @@
 ## haskell
 
 ```sh
-echo "use flake ~/envs/haskell" > .envrc && echo .envrc >> .git/info/exclude && direnv allow
+echo "use flake ~/envs/haskell" > .envrc && printf ".envrc\n.direnv\n" >> .git/info/exclude && direnv allow
 ```
