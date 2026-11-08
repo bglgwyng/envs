@@ -12,6 +12,14 @@ use-env haskell
 
 Writes `.envrc` (`use flake ~/envs/haskell`), adds `.envrc` and `.direnv` to `.git/info/exclude` (no duplicates), and runs `direnv allow`.
 
+To undo:
+
+```sh
+use-env --remove
+```
+
+Removes `.envrc` (only if created by `use-env`), `.direnv`, and the exclude entries.
+
 ## Install (home-manager)
 
 ```nix
